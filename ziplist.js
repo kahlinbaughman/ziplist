@@ -6,8 +6,8 @@ function zipList(list1, list2){
   const answer = [];
   if (list1.length === list2.length) {
     for (let i = 0; i < list1.length; i++) {
-      answer.pop(list1[i]);
-      answer.pop(list2[i]);
+      answer.push(list1[i]);
+      answer.push(list2[i]);
     }
   } else {
     console.log('Please use lists of equal lengths.');
